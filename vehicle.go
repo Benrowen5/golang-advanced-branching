@@ -31,14 +31,14 @@ var vehicleResult map[string]feedbackResult
 var inventory []vehicle
 
 // Values array for the feedback.json file
-type values struct {
-	models []model `json:"values"`
+type Values struct {
+	Models []Model `json:"values"`
 }
 
 // Model array for the feedback.json file
-type model struct {
-	name     string   `json: "model"`
-	feedback []string `json: "feedback"`
+type Model struct {
+	Name     string   `json: "model"`
+	Feedback []string `json: "feedback"`
 }
 
 type rating float32
